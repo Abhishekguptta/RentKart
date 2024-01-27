@@ -1,0 +1,62 @@
+.content {
+  padding: 16px;
+}
+
+.header {
+  padding: 0 4rem;
+  height: fit-content;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7f5ff;
+  text-decoration: none;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 5rem;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.myButton1{
+  height:4.0rem;
+  width:15rem;
+  font-size:15px;
+  margin-left: 5rem;
+  border-radius: 15px;
+  margin-top: -0.5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.2s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #42d3af;
+  border-radius: 15px;
+}

@@ -1,0 +1,22 @@
+@import './index.scss';
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.avatar_initials {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    margin-right: 0.6rem;
+  }
+}

@@ -1,0 +1,68 @@
+@import './index.scss';
+
+.wrapper {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit,16rem) ;
+	gap:8px;
+}
+
+.card {
+	@include flex-col;
+
+	border: 1px solid rgb(214, 206, 206);
+	border-radius: 12px;
+	width: 100%;
+	max-width: 250px;
+	position: relative;
+	height: fit-content;
+	padding: 0.5rem;
+	cursor: pointer;
+	min-height: 280px;
+	margin: 10px;
+	
+
+	@include mobile {
+		flex-direction: row;
+		width: unset;
+		max-width: unset;
+		height: unset;
+		min-height: unset;
+	}
+
+	&:hover {
+		box-shadow: 0 2px 20px grey;
+	}
+	
+	&__picture {
+		background-color: rgba(231, 116, 235, 0.8);
+		border-radius: 12px;
+	}
+
+	&__info {
+		@include flex-col;
+
+    margin-top: 15px;
+    padding: 12px;
+		overflow: auto;
+
+		&--desc{
+		@include multiline-ellipses;
+
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 18px;
+	}
+
+	&--rent {
+		margin: 10px 1px 1px;
+		font-size: 20px;
+		display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+
+		@include mobile {
+			justify-content: unset;
+		}
+	}
+ }
+}

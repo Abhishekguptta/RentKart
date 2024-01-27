@@ -1,0 +1,86 @@
+@import './mixin';
+
+.room_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.room_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 4rem 6rem;
+
+  &__name {
+    font-size: 2.2rem;
+    letter-spacing: normal;
+    font-weight: 400;
+  }
+
+  &__rent {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  &__features {
+    display: flex;
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 2rem 4rem 2rem 0;
+    gap: 5rem;
+    justify-content: space-between;
+    border: 1px dashed;
+    border-left: unset;
+    box-shadow: 0 -2px 15px grey;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 2rem 1rem; 
+    }
+  }
+
+  @include tablet {
+    width: calc(100% - 5rem);
+    padding: unset;
+    padding-top: 4rem;
+  }
+}
+
+.house_facilities {
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    line-height: 1.98;
+  }
+}
+
+.house_map_loc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  width: -webkit-fill-available;
+  align-items: center; 
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding: 2.8rem 1rem;
+  }
+
+  &__embed_map {
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

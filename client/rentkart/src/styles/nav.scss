@@ -1,0 +1,93 @@
+
+
+.header {
+  padding: 1.2rem 4rem;
+  height: 6.5rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(206,177,230,1) 92%);
+  text-decoration: none;
+}
+
+.header .logo {
+  height: 5rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.myButton1{
+  height:4.0rem;
+  width:15rem;
+  font-size:15px;
+  margin-left: 5rem;
+  border-radius: 15px;
+  margin-top: -0.5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 4rem);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.2s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #42d3af;
+  border-radius: 15px;
+  /* background-color:#e5f5f2; */
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.section-hero,
+.section-services {
+  padding: 9.6rem 0;
+  background-color: linear-gradient(100deg, rgba(231, 116, 235, 0.8) 0%, rgba(236, 232, 236, 0.959) 25%);
+  height: 200vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-services {
+  background: #f3f0ff;
+}
+
+.section-hero p,
+.section-services p {
+  font-size: 3.2rem;
+}
+
+

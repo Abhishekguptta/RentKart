@@ -1,0 +1,57 @@
+.show-in-mobile {
+  display: none !important;  // avoid using important at other places but here it was necessary to do so
+  @include mobile {
+    display: block !important;
+  }
+}
+
+.hide-in-mobile {
+  display: block !important; 
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide-content {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.hoverEffect {
+  &:hover {
+    color: snow;
+  }
+}
+
+.upperCase {
+  text-transform: capitalize;
+}
+
+.justify-space {
+  justify-content: space-between;
+}

@@ -1,0 +1,74 @@
+@import './index';
+
+
+.room-form {
+  @include flex-col;
+
+  background: linear-gradient(153deg, rgba(255,255,255,1) 0%, rgba(206,177,230,1) 75%); 
+  height: 100vh;
+  border-radius: 12px;
+  border: 1px solid;
+  margin: 2rem;
+  overflow: auto;
+  
+  &__heading {
+    text-align: center;
+  }
+
+  &__container {
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+
+    &--form {
+      width: fit-content;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px grey;
+      display: flex;
+      margin-left: 4rem;
+      margin-bottom: 1rem;
+      background: lavender;
+      overflow: auto;
+    } 
+
+    &--submit_btn {
+      background: lightskyblue;
+      height: fit-content;
+      color: white;
+      padding: 16px;
+      cursor: pointer;
+      border: 2px solid rgb(37, 200, 221);
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      &:hover {
+      box-shadow: 0 5px 15px snow;
+      }
+    }
+  }
+}
+
+.form-table {
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  margin: 2rem;
+
+  &__row {
+    &--input {
+      padding: 6px 10rem 6px 6px;
+    }
+  }
+
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+}
+
+.required {
+  color: red;
+}

@@ -1,0 +1,83 @@
+@import './index.scss';
+
+.Login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 10rem;
+  height: 70vh;
+  background-color: #f8f9fd;
+
+  .title {
+    font-size: 3rem;
+    color: darkorchid;
+    font-style: normal;
+    text-align: center;
+  }
+}
+  
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+  
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+
+  &:hover {
+    background: #6cf0c2;
+}
+}
+  
+.login-form {
+  @include flex-col;
+
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+}
+  
+.list-container {
+  display: flex;
+}
+  
+.error {
+  color: red;
+  font-size: 12px;
+}
+  
+
+
+.form-box {
+  @include flex-col;
+
+  width: 100%;
+  font-size: 2.4rem;
+  padding: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  padding: 2.4rem 0;
+  flex-direction: column;
+  gap: 8px;
+  width: calc(100% - 2rem);
+}
+
+.login_error {
+  color: red;
+  font-size: 1.6rem;
+}
